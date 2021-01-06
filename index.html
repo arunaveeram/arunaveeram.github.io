@@ -318,44 +318,10 @@
             <a href="https://www.facebook.com/" class="external facebook " data-animate-hover="shake" data-animate="fadeInUp"  target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a>
             <a href="mailto:veeramreddyaruna@gmail.com" target="_blank" class="email" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-envelope faa-horizontal"></i></a>
         </p>
-        &copy; 2018 Brianmwevi.github.io  | by<a href="https://brianmwevi.github.io/"> <strong class="owner">Aruna Veeramreddy</strong></a>
+        &copy; 2018 arunaveeram.github.io  | by<a href="https://arunaveeram.github.io/"> <strong class="owner">Aruna Veeramreddy</strong></a>
     </footer>
     <a href="#" class="scrollup"><i class="fa fa-angle-up fa-2x"></i></a>
 
-    
-
-
-
-    <!--FOOTER SECTION END  -->
-    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY  SCRIPTS -->
-
-<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-      style: {
-          shape: 'pill',
-          color: 'blue',
-          layout: 'vertical',
-          label: 'paypal',
-          
-      },
-      createOrder: function(data, actions) {
-          return actions.order.create({
-              purchase_units: [{
-                  amount: {
-                      value: '1'
-                  }
-              }]
-          });
-      },
-      onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-              alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-      }
-  }).render('#paypal-button-container');
-</script>
     <script src="assets/js/jquery-1.11.1.js"></script>
     <!-- BOOTSTRAP SCRIPTS  -->
     <script src="assets/js/bootstrap.js"></script>
